@@ -175,6 +175,11 @@
     margin-left: 75px;
 }
 
+.container .card .pulse:hover{
+    animation: pulse 0.5s infinite;
+    animation-timing-function: linear;
+}
+
 /* .container .card:nth-child(1) img {
     background: #e07768;
 } */
