@@ -1,3 +1,4 @@
+/* GLOBAL */
 *{
     margin: 0;
     padding: 0;
@@ -10,13 +11,15 @@
 
 
 
-.header img{
+/* HEDER */
+
+.header {
    width: 100%;
    height: 400px;
    position: relative;
    display: inline-block;
    text-align: center;
-   
+   background-color: black;
    
    
      
@@ -77,21 +80,203 @@
     
 }
 
-.about-me h2{
-    color: white;
-    margin-left: 5px;
+.redes i:hover{
+    color: red;
 }
 
-.about-me hr{
+
+/* SOBRE MI */
+.about-me h2, .cursos h2{
+    color: white;
+    margin-left: 100px;
+    font-size: 35px;
+}
+
+
+
+.about-me hr, .cursos hr{
     height: 3px;
     width: 45px;
     background-color: red;
     border: none;
     border-radius: 5px;
-    margin-left: 5px;
+    margin-left: 100px;
 }
 
 .about-me img{
-    width: 700px;
+    width: 900px;
     float: right;
+    border-radius: 25px;
+}
+
+.cuadro_about{
+    position: relative;
+    left: 100px;
+    margin-top: 100px;
+    width: 645px;
+    height: 350px;
+    background-color: red;
+    padding: 15px;
+    border-radius: 15px;
+}
+.cuadro_about p{
+ padding: 25px 5px 25px 5px;
+ color: white;
+ font-size: 25px;
+ background-color: red;
+}
+
+.cuadro_about .btn{
+    position: absolute;
+    color: white;
+    width: 125px;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 15px;
+    font-size: 17px;
+   
+}
+
+/* CERTIFICACIONES Y CURSOS */
+
+.cursos{
+    margin-top: 125px;
+}
+
+.container {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 35px;
+    
+    
+}
+
+.container .card {
+    position: relative;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.container .card img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 150px;
+    /* background: #f00; */
+    transition: 0.7s;
+    z-index: 1;
+    margin-left: 75px;
+}
+
+/* .container .card:nth-child(1) img {
+    background: #e07768;
+} */
+
+/* .container .card:nth-child(2) img {
+    background: #6eadd4;
+}
+
+.container .card:nth-child(3) img {
+    background: #4aada9;
+} */
+
+
+/* .container .card .icon .fa {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    transition: 0.7s;
+    color: #fff;
+} */
+
+/* img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    transition: 0.7s;
+    color: #fff;
+} */
+
+.container .card .face {
+    width: 300px;
+    height: 200px;
+    transition: 0.5s;
+}
+
+.container .card .face.face1 {
+    position: relative;
+    /* background: #333; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+}
+
+.container .card:hover .face.face1{
+    /* background: #ff0057; */
+    transform: translateY(0px);
+}
+
+.container .card .face.face1 .content {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+/* .container .card:hover .face.face1 .content {
+    opacity: 0.8;
+} */
+
+
+
+.container .card .face.face2 {
+    position: relative;
+    /* background: #fff; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px   rgba(255, 255, 255, 0.295);
+    transform: translateY(-100px);
+}
+
+.container .card:hover .face.face2{
+    transform: translateY(0);
+}
+
+.container .card .face.face2 .content p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: red;
+}
+
+.container .card .face.face2 .content h3 {
+    margin: 0 0 10px 0;
+    padding: 0;
+    color: #fff;
+    /* font-size: 24px; */
+    text-align: center;
+    color:red;
+} 
+.container .card .face.face2 .content span{
+    color: #fff;
+}
+
+
+.container a {
+    text-decoration: none;
+    color: #fff;
 }
