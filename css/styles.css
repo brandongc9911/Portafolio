@@ -2,6 +2,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'Nunito', sans-serif;
     background-color: black;
     
@@ -9,53 +10,28 @@
     
 }
 
-
-
-/* HEDER */
+/* HEADER */
 
 .header {
    width: 100%;
-   height: 400px;
-   position: relative;
-   display: inline-block;
+   height: auto;
    text-align: center;
    background-color: black;
-   
-   
-     
  
 }
 
 
-
-/* .header #perfil{
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    width: 120px;
-    border-radius: 45%;
-} */
-
-
-
 .header h1{
     color: white;
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    font-size: 55px;
-    transform: translate(-50%, -50%);
+    font-size: 3em;
+    margin-top: 25px;
 
 }
-.header h2{
+ .header h2{
     color: white;
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    font-size: 35px;
-    transform: translate(-50%, -50%);
-
-}
+    font-size: 2.5em;
+    
+} 
 
 
 
@@ -64,19 +40,11 @@
     font-weight: 900;
 }
 
-
-.redes{
-    position: absolute;
-    left: 50%;
-    top: 55%;
-    transform: translate(-50%, -50%);
-
-}
-
 .redes i{
     color: white;
-    font-size: 25px;
-    margin-right: 15px;
+    font-size: 2em;
+    margin-right: 0.5em;
+    margin-top: 0.5em;
     
 }
 
@@ -86,59 +54,80 @@
 
 
 /* SOBRE MI */
-.about-me h2, .cursos h2{
-    color: white;
-    margin-left: 100px;
-    font-size: 35px;
+
+.about-me{
+    display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+    margin-top: 5em;
+    
+}
+
+.about-me > div{
+    width: 50%;
 }
 
 
 
-.about-me hr, .cursos hr{
-    height: 3px;
-    width: 45px;
+.about-me_img h2, .cursos h2{
+    color: white;
+    margin-left: 3em;
+    font-size: 2em;
+}
+
+.about-me_img hr, .cursos hr{
+    height: 0.2em;
+    width: 2.5em;
     background-color: red;
     border: none;
     border-radius: 5px;
-    margin-left: 100px;
+    margin-left: 6em;
 }
 
-.about-me img{
-    width: 900px;
-    float: right;
+.about-me_img img{
+    width: 100%;
+    max-width: 600px;
     border-radius: 25px;
+    margin-left: 5em;
+    margin-top: 1.5em;
+  
 }
 
-.cuadro_about{
-    position: relative;
-    left: 100px;
-    margin-top: 100px;
-    width: 645px;
-    height: 350px;
-    background-color: red;
-    padding: 15px;
-    border-radius: 15px;
-}
-.cuadro_about p{
- padding: 25px 5px 25px 5px;
- color: white;
- font-size: 25px;
- background-color: red;
-}
 
-.cuadro_about .btn{
-    position: absolute;
+
+.about-me_text p{
     color: white;
-    width: 125px;
-    height: 35px;
+    font-size: 1.6em;
+    margin-top: 5em;
+    margin-left: 1.2em;
+    
+}
+
+.about-me_text a{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+    padding-top: 5px;
+}
+
+.about-me_text .btn{
+    background-color: red;
     border: none;
     border-radius: 5px;
-    left: 50%;
-    transform: translate(-50%);
-    margin-top: 15px;
-    font-size: 17px;
-   
+    margin-left: 10em;
+    margin-top: 2.5em;
+    display: block;
+    width: 150px;
+    
+    
 }
+
+.about-me_text .btn:hover{
+    cursor: pointer;
+}
+
+
 
 /* CERTIFICACIONES Y CURSOS */
 
@@ -167,9 +156,9 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 150px;
+    width: 100%;
+    max-width: 150px;
     height: 150px;
-    /* background: #f00; */
     transition: 0.7s;
     z-index: 1;
     margin-left: 75px;
@@ -180,48 +169,17 @@
     animation-timing-function: linear;
 }
 
-/* .container .card:nth-child(1) img {
-    background: #e07768;
-} */
 
-/* .container .card:nth-child(2) img {
-    background: #6eadd4;
-}
-
-.container .card:nth-child(3) img {
-    background: #4aada9;
-} */
-
-
-/* .container .card .icon .fa {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 80px;
-    transition: 0.7s;
-    color: #fff;
-} */
-
-/* img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 80px;
-    transition: 0.7s;
-    color: #fff;
-} */
 
 .container .card .face {
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
     height: 200px;
     transition: 0.5s;
 }
 
 .container .card .face.face1 {
     position: relative;
-    /* background: #333; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -230,7 +188,6 @@
 }
 
 .container .card:hover .face.face1{
-    /* background: #ff0057; */
     transform: translateY(0px);
 }
 
@@ -239,15 +196,10 @@
     transition: 0.5s;
 }
 
-/* .container .card:hover .face.face1 .content {
-    opacity: 0.8;
-} */
-
 
 
 .container .card .face.face2 {
     position: relative;
-    /* background: #fff; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -271,8 +223,6 @@
 .container .card .face.face2 .content h3 {
     margin: 0 0 10px 0;
     padding: 0;
-    color: #fff;
-    /* font-size: 24px; */
     text-align: center;
     color:red;
 } 
@@ -285,3 +235,73 @@
     text-decoration: none;
     color: #fff;
 }
+
+
+
+
+/* Teléfonos */
+@media only screen and (max-width: 575px){
+    .header h1{
+        font-size: 1.5em;
+        
+    
+    }
+    .header h2{
+        font-size: 1.3em;
+    } 
+    .redes i{
+        font-size: 1.2em;
+        
+    }
+
+    .about-me{
+        flex-direction: column;
+    }
+
+
+    .about-me > div{
+        width: 100%;
+        
+    }
+    
+    .about-me_img h2, .cursos h2{
+        margin-left: 2em;
+        font-size: 1.5em;
+    }
+    
+     .about-me_img hr, .cursos hr{
+        margin-left: 3em;
+    }
+    
+    
+    .about-me_img img{
+        margin: 1em 0;
+        padding: 0;
+        border-radius: 0;
+      
+    }
+    
+    
+   
+    
+    .about-me_text p{
+        font-size: 1.6em;
+        
+    }
+    
+    
+    
+    
+    .about-me_text .btn{
+        margin-left: 5em;
+        margin-top: 2.5em;
+        
+        
+    } 
+
+
+    
+}
+
+
+
