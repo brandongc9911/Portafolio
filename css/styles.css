@@ -4,316 +4,308 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Nunito', sans-serif;
-    background-color: black;
+    color:#fff;
     
-
-    
-}
-
-/* HEADER */
-
-.header {
-   width: 100%;
-   height: auto;
-   text-align: center;
-   background-color: black;
-   margin-top: 1.2em;
- 
-}
-
-.header #avatar{
-    width: 400px;
-    border: 3px solid red;
-}
-
-.header h1{
-    color: white;
-    font-size: 3em;
-    margin-top: 25px;
-
-}
- .header h2{
-    color: white;
-    font-size: 2.5em;
-    
-} 
-
-
-
-.header .span{
-    color: red;
-    font-weight: 900;
-}
-
-.redes i{
-    color: white;
-    font-size: 2.5em;
-    margin-right: 0.5em;
-    margin-top: 0.5em;
+  
     
 }
 
-.redes i:hover{
-    color: red;
-}
-
-
-/* SOBRE MI */
-
-.about-me{
-    display: -ms-flex;
-	display: -webkit-flex;
-	display: flex;
-    margin-top: 5em;
-    
-}
-
-.about-me > div{
-    width: 50%;
-}
-
-
-
-.about-me_img h2, .cursos h2{
-    color: white;
-    margin-left: 3em;
-    font-size: 2em;
-}
-
-.about-me_img hr, .cursos hr{
+hr{
     height: 0.2em;
     width: 2.5em;
     background-color: red;
     border: none;
     border-radius: 5px;
-    margin-left: 6em;
-}
-
-.about-me_img img{
-    width: 100%;
-    max-width: 600px;
-    border-radius: 25px;
-    margin-left: 5em;
-    margin-top: 1.5em;
-  
-}
-
-
-
-.about-me_text p{
-    color: white;
-    font-size: 1.6em;
-    margin-top: 5em;
-    margin-left: 1.2em;
-    
-}
-
-.about-me_text a{
-    text-decoration: none;
-    text-align: center;
-    color: white;
-    font-size: 1.5em;
-    padding-top: 5px;
-}
-
-.about-me_text .btn{
-    background-color: red;
-    border: none;
-    border-radius: 5px;
-    margin-left: 10em;
-    margin-top: 2.5em;
-    display: block;
-    width: 150px;
-    
-    
-}
-
-.about-me_text .btn:hover{
-    cursor: pointer;
-}
-
-
-
-/* CERTIFICACIONES Y CURSOS */
-
-.cursos{
-    margin-top: 125px;
-}
-
-.container {
-    width: 100%;
-    position: relative;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    margin-top: 35px;
-    
-    
-}
-
-.container .card {
-    position: relative;
-    border-radius: 10px;
-    margin-top: 15px;
-}
-
-.container .card img {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    max-width: 150px;
-    transition: 0.7s;
-    z-index: 1;
-    margin-left: 4em;
-    margin-top: 1.3em;
     
 }
 
-.container .card .pulse:hover{
-    animation: pulse 0.5s infinite;
-    animation-timing-function: linear;
-}
-
-
-
-.container .card .face {
-    width: 100%;
-    max-width: 300px;
-    height: 200px;
-    transition: 0.5s;
-}
-
-.container .card .face.face1 {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
-    transform: translateY(100px);
+body{
+    background-color: #001313;
     
 }
 
-.container .card:hover .face.face1{
-    transform: translateY(0px);
-}
 
-.container .card .face.face1 .content {
-    opacity: 1;
-    transition: 0.5s;
-}
-
-
-
-.container .card .face.face2 {
-    position: relative;
+.contenedor{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 20px;
-    box-sizing: border-box;
-    box-shadow: 0 20px 50px   rgba(49, 48, 48, 0.329);
-    transform: translateY(-100px);
-}
-
-.container .card:hover .face.face2{
-    transform: translateY(0);
-}
-
-.container .card .face.face2 .content p {
-    margin: 0;
-    padding: 0;
     text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    /* background-color: red; */
+}
+
+ /* HEADER  */
+header{
+    width: 100%;
+    height: 625px;
+    background-image: url('https://images.unsplash.com/photo-1610911331371-1cd19301b9e8?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDEzfGJvOGpRS1RhRTBZfHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+
+header::before{
+    content:'';
+	position: absolute;
+    top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.6);
+}
+
+
+
+
+
+header .name{
+    position: relative;
+    top: 40%;
+    
+    
+    
+}
+
+header .name h1{
+    font-size: 3.5em;
+}
+
+header .name h2{
+    font-size: 2.5em;
+    
+}
+
+
+
+header .name span{
     color: red;
 }
 
-.container .card .face.face2 .content h3 {
-    margin: 0 0 10px 0;
-    padding: 0;
-    text-align: center;
-    color:red;
-} 
-.container .card .face.face2 .content span{
-    color: #fff;
-}
-
-
-.container a {
-    text-decoration: none;
-    color: #fff;
-}
-
-
-
-
-/* Teléfonos */
-@media only screen and (max-width: 575px){
-    .header h1{
-        font-size: 1.5em;
-        
+header .redes{
+    top: 42%;
+    font-size: 1.8em;
+    z-index: 1;
+    position: relative;
     
+}
+
+header  .redes i{
+    margin-left: 0.3em;
+}
+
+
+/* SOBRE MI  */
+
+.content-about-me{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2.3em;
+}
+
+
+.content-about-me > div {
+    width: 50%;
+    padding: 10px;
+}
+.content-about-me .content-img img{
+    width: 100%;
+    max-width: 300px;
+    margin-left: 2em;
+}
+
+
+.content-about-me .sobre-mi{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5em;
+}
+
+.content-about-me .sobre-mi p{
+    margin-top: 0.5em;
+    flex-wrap: wrap;
+    margin-left: 1em;
+    
+    
+}
+
+.content-about-me .sobre-mi span{
+    color: red;
+}
+
+
+
+
+.content-about-me .sobre-mi .btn{
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    margin-left: 20em;
+    margin-top: 2.5em;
+    display: block;
+    width: 120px;
+    height: 25px;
+    
+
+}
+
+.content-about-me .sobre-mi a{
+    text-decoration: none;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.content-about-me .sobre-mi hr{
+    position: relative;
+    left: 390px;
+}
+
+
+
+
+
+
+ /* Cursos  */
+
+.cursos{
+    text-align: center;
+    margin-top: 0.5em;
+}
+
+
+.cursos hr{
+    position: relative;
+    left: 550px;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    margin-left: 8em;
+    margin-top: 2.2em;
+    
+}
+
+.container > div:first-child h3{
+    margin-top: 0.1em;
+    
+}
+
+.container .card{
+    width: 100%;
+    max-width: 300px;
+    height: 220px;
+    background-color: rgb(54, 51, 51);
+    border-radius: 25px;
+    margin-left: 2em;
+    margin-top: 1.5em;
+    padding: 0.2em;
+    
+}
+.container .card a{
+    text-decoration: none;
+}
+.container .card h3{
+    color: red;
+    margin-top: 0.5em;
+}
+
+.container > div:last-child{
+    position: relative;
+    left: 28%;
+}
+
+.container .card img{
+    width: 100%;
+    max-width: 100px;
+    margin-top: 0.8em;
+}
+
+
+
+
+
+ /* Teléfonos */
+  @media only screen and (max-width: 575px){
+
+    header .name{
+        position: relative;
+        top: 40%;
+        
+        
+        
     }
-    .header h2{
-        font-size: 1.3em;
-    } 
-    .redes i{
-        font-size: 1.2em;
+    
+    header .name h1{
+        font-size: 2.5em;
+    }
+    
+    header .name h2{
+        font-size: 2em;
         
     }
 
-    .about-me{
-        flex-direction: column;
+     .content-about-me{
+       /* flex-direction: row; */
+       flex-wrap: wrap;
+       justify-content: center;
+       align-items: center;
+    } 
+
+    .content-about-me .content-img img{
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+        
     }
 
-
-    .about-me > div{
+    .content-about-me .sobre-mi{
+        position: relative;
+        margin: 0 auto;
+        padding: 0;
         width: 100%;
         
     }
     
-    .about-me_img h2, .cursos h2{
-        margin-left: 2em;
-        font-size: 1.5em;
-    }
-    
-     .about-me_img hr, .cursos hr{
-        margin-left: 3em;
-    }
-    
-    
-    .about-me_img img{
-        margin: 1em 0;
-        padding: 0;
-        border-radius: 0;
-      
-    }
-    
-    
-   
-    
-    .about-me_text p{
-        font-size: 1.6em;
-        
-    }
-    
-    
-    
-    
-    .about-me_text .btn{
-        margin-left: 5em;
-        margin-top: 2.5em;
-        
-        
+
+     .content-about-me .sobre-mi p{
+        /* text-align: justify; */
+        margin-top: 2em;
     } 
 
-    .container .card .face.face1 {
-        align-items: center;
-       
+    .content-about-me .sobre-mi hr{
+        position: relative;
+        left: 8.7em;
+    }
+
+      .content-about-me .sobre-mi .btn{
+        position: relative;
+        margin-left: 7em;
+    
     }
 
 
-    
-}
+    .cursos{
+        margin-top: 2em;
+    }
+    .cursos hr{
+        position: relative;
+        left: 4em;
+    }
 
 
+    .container{
+        margin: 0 auto;
+        
+    }
 
+    .container > div:last-child{
+        position: relative;
+        left: 0;
+    }
+ }
