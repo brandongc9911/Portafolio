@@ -232,6 +232,10 @@ header  .redes i{
 
  /* Teléfonos */
   @media only screen and (max-width: 575px){
+      
+    header{
+        height: 350px;
+    }
 
     header .name{
         position: relative;
@@ -242,11 +246,12 @@ header  .redes i{
     }
     
     header .name h1{
-        font-size: 2.5em;
+        font-size: 1.8em;
+        
     }
     
     header .name h2{
-        font-size: 2em;
+        font-size: 1.7em;
         
     }
 
@@ -258,7 +263,9 @@ header  .redes i{
     } 
 
     .content-about-me .content-img img{
-        width: 100%;
+        width: 200px;
+        height: 200px;
+        border-radius: 230px;
         margin: 0 auto;
         padding: 0;
         
@@ -295,7 +302,7 @@ header  .redes i{
     }
     .cursos hr{
         position: relative;
-        left: 4em;
+        left: 3.5em;
     }
 
 
