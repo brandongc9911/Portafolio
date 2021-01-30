@@ -10,18 +10,11 @@
     
 }
 
-hr{
-    height: 0.2em;
-    width: 2.5em;
-    background-color: red;
-    border: none;
-    border-radius: 5px;
-    position: absolute;
-    
-}
+
 
 body{
     background-color: #001313;
+   
     
 }
 
@@ -40,7 +33,7 @@ body{
  /* HEADER  */
 header{
     width: 100%;
-    height: 625px;
+    height: 100vh;
     background-image: url('https://images.unsplash.com/photo-1610911331371-1cd19301b9e8?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDEzfGJvOGpRS1RhRTBZfHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');
     background-size: cover;
     background-repeat: no-repeat;
@@ -103,7 +96,7 @@ header  .redes i{
 .content-about-me{
     display: flex;
     justify-content: space-between;
-    margin-top: 2.3em;
+    margin: 5.5em 0;
 }
 
 
@@ -113,6 +106,7 @@ header  .redes i{
 }
 .content-about-me .content-img img{
     width: 100%;
+    height: auto;
     max-width: 300px;
     margin-left: 2em;
 }
@@ -123,6 +117,17 @@ header  .redes i{
     display: flex;
     flex-direction: column;
     margin-top: 5em;
+}
+
+.content-about-me .sobre-mi h2::after{
+    content: "";
+    width: 25px;
+    height: 4px;
+    background-color: #F7391C;
+    display: inline-block;
+    position: relative;
+    top: 0.5em;
+    right: 4em;
 }
 
 .content-about-me .sobre-mi p{
@@ -159,11 +164,6 @@ header  .redes i{
     text-align: center;
 }
 
-.content-about-me .sobre-mi hr{
-    position: relative;
-    left: 390px;
-}
-
 
 
 
@@ -171,22 +171,33 @@ header  .redes i{
 
  /* Cursos  */
 
+
+
+
+
 .cursos{
     text-align: center;
     margin-top: 0.5em;
+    
 }
 
 
-.cursos hr{
+.cursos h2::after{
+    content: "";
+    width: 25px;
+    height: 4px;
+    background-color: #F7391C;
+    display: inline-block;
     position: relative;
-    left: 550px;
+    top: 0.5em;
+    right: 10.3em;
 }
 
 .container{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
     flex: 1;
-    margin-left: 8em;
     margin-top: 2.2em;
     
 }
@@ -215,10 +226,6 @@ header  .redes i{
     margin-top: 0.5em;
 }
 
-.container > div:last-child{
-    position: relative;
-    left: 28%;
-}
 
 .container .card img{
     width: 100%;
@@ -233,25 +240,23 @@ header  .redes i{
  /* Teléfonos */
   @media only screen and (max-width: 575px){
       
-    header{
-        height: 350px;
-    }
+    
 
     header .name{
         position: relative;
         top: 40%;
-        
+        padding: 0 2em;
         
         
     }
     
     header .name h1{
-        font-size: 1.8em;
+        font-size: 2.5em;
         
     }
     
     header .name h2{
-        font-size: 1.7em;
+        font-size: 2em;
         
     }
 
@@ -263,11 +268,9 @@ header  .redes i{
     } 
 
     .content-about-me .content-img img{
-        width: 200px;
-        height: 200px;
-        border-radius: 230px;
         margin: 0 auto;
         padding: 0;
+        
         
     }
 
@@ -281,14 +284,11 @@ header  .redes i{
     
 
      .content-about-me .sobre-mi p{
-        /* text-align: justify; */
+        text-align: justify;
         margin-top: 2em;
+        padding: 0px 5px;
     } 
 
-    .content-about-me .sobre-mi hr{
-        position: relative;
-        left: 8.7em;
-    }
 
       .content-about-me .sobre-mi .btn{
         position: relative;
@@ -299,20 +299,29 @@ header  .redes i{
 
     .cursos{
         margin-top: 2em;
+        margin-left: 0;
     }
-    .cursos hr{
-        position: relative;
-        left: 3.5em;
-    }
-
+    
 
     .container{
         margin: 0 auto;
         
     }
-
-    .container > div:last-child{
-        position: relative;
-        left: 0;
-    }
  }
+
+ /* Tablets y phablets */
+@media only screen and (min-width: 576px) and (max-width: 767px){
+    
+    .content-about-me{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+     } 
+  
+    .content-about-me .sobre-mi .btn{
+        position: relative;
+        margin-left: 15.5em;
+    
+    }
+}
+
