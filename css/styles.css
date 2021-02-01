@@ -287,6 +287,8 @@ header  .redes i{
         text-align: justify;
         margin-top: 2em;
         padding: 0px 5px;
+        margin: 0 2em;
+        line-height: 1.6;
     } 
 
 
@@ -299,13 +301,13 @@ header  .redes i{
 
     .cursos{
         margin-top: 2em;
-        margin-left: 0;
+        align-items: center;
     }
     
 
-    .container{
-        margin: 0 auto;
-        
+   
+    .container .card{
+        margin: 1em 0;
     }
  }
 
