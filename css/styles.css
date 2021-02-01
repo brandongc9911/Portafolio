@@ -27,7 +27,7 @@ body{
     text-align: center;
     width: 100%;
     margin: 0 auto;
-    /* background-color: red; */
+    
 }
 
  /* HEADER  */
@@ -86,8 +86,13 @@ header .redes{
     
 }
 
+
 header  .redes i{
     margin-left: 0.3em;
+}
+
+header .redes i:hover{
+    color:  #F7391C;
 }
 
 
@@ -171,10 +176,6 @@ header  .redes i{
 
  /* Cursos  */
 
-
-
-
-
 .cursos{
     text-align: center;
     margin-top: 0.5em;
@@ -182,7 +183,7 @@ header  .redes i{
 }
 
 
-.cursos h2::after{
+.contenedor .cursos h2::after{
     content: "";
     width: 25px;
     height: 4px;
@@ -196,7 +197,7 @@ header  .redes i{
 .container{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     flex: 1;
     margin-top: 2.2em;
     
@@ -206,6 +207,7 @@ header  .redes i{
     margin-top: 0.1em;
     
 }
+
 
 .container .card{
     width: 100%;
@@ -218,6 +220,8 @@ header  .redes i{
     padding: 0.2em;
     
 }
+
+
 .container .card a{
     text-decoration: none;
 }
@@ -287,7 +291,7 @@ header  .redes i{
         text-align: justify;
         margin-top: 2em;
         padding: 0px 5px;
-        margin: 0 2em;
+        margin: 0.7em 2em;
         line-height: 1.6;
     } 
 
