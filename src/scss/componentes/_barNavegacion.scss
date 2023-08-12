@@ -1,0 +1,30 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+header.header, footer.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color:  black;
+    padding: 1.5rem 0.5rem;
+    border-bottom: 8px solid #460b0b;
+
+    
+   
+
+    a{
+        color: white;
+        font-size: 2rem;
+        margin: 0;
+        font-weight: bold;
+    }
+}
+
+.navegacion {
+    margin-right: 1.5rem;
+
+    a{
+        font-size: 1.8rem;
+        margin-right: 1rem;
+    }
+}

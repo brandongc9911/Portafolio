@@ -8,10 +8,10 @@ use Controllers\PaginasController;
 
  $router = new Router();
 
-//  ZONA PUBLICA
+
  $router->get('/',[PaginasController::class, 'index']);
  $router->get('/projects',[PaginasController::class, 'projects']);
- $router->get('/project',[PaginasController::class, 'project']);
+
 
 //  API
 $router->get('/api/projects',[APIController::class, 'projects']);

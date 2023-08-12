@@ -1,10 +1,3 @@
-<?php 
-  if(!isset($_SESSION)){
-    session_start();
-  }
-
-  $auth = $_SESSION['login'] ?? false;
-?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -17,19 +10,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Koulen&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/4a87bade47.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/styles/normalize.css" />
-    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="build/css/app.css" />
     <title>GC Dev</title>
   </head>
 <body>
     <header class="header">
-        <h1><a href="/">GC DEV</a></h1>
+        <a href="/">GC DEV</a>
         <div class="navegacion">
-        <a href="#projects">PROJECTS</a>
-        <?php if ($auth) : ?>
-              <a href="/admin">Admin</a>
-              <a href="/logout">Log Out</a>
-            <?php endif ?>
+         <a href="#projects">Proyectos</a>
         </div>
     </header>
     <?php echo $contenido; ?>
@@ -37,6 +25,6 @@
         <h1><a href="/">GC DEV</a></h1>
         
     </footer>
-    <script type="module" src="/js/app.js"></script>
+    <script type="module" src="build/js/app.js"></script>
   </body>
 </html>

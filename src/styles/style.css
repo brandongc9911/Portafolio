@@ -1,0 +1,287 @@
+
+.show-project{
+    width: 100%;
+    position: relative;
+    background-color: black;
+    height: 30rem;
+    
+}
+
+
+.show-project img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.17;
+
+}
+
+.show-project h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-size: 4rem;
+
+}
+
+.show-project .show_page, .show-project .show_icon{
+    position: absolute;
+    bottom: 2rem;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
+
+.show_page{
+    margin-left: 2rem;
+}
+
+
+
+
+
+.show_icon p{
+    margin-left:  1rem;
+}
+.show_icon {
+    display: flex;
+    align-items: center;
+    right: 1rem;
+    
+}
+.show_icon .show_icon-button{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    margin-left: 1rem;
+}
+.show_page a{
+  margin-left: 1rem;
+}
+.show_page a, .show_icon-button{
+    padding: 0.2rem 2rem;
+    border-radius: 2rem;
+}
+
+
+
+.show_page a:first-child{
+    color: white;
+    background-color: rgb(237, 44, 73);
+    
+}
+
+.show_page a:last-child{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+
+
+.formulario{
+    display: grid;
+    width: 40rem;
+    padding: 1rem;
+    place-content: center;
+    border: 3px solid black;
+    border-radius: 2rem;
+    margin: 2rem auto;
+}
+
+
+.row{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1.5em;
+}
+
+.row label{
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
+.row input{
+    width: 20rem;
+    padding: 0.2rem 0;
+    border: 0.2px solid black;
+    border-radius: 5rem;
+    padding-left: 0.5rem;
+}
+
+table{
+    width: 50rem;
+    height: auto;
+    margin: 2rem auto;
+}
+
+table  .btn{
+    padding: 0.2rem 0;
+    display: block;
+    width: 10rem;
+}
+
+.menu{
+    display: flex;
+    width: 50rem;
+    justify-content: space-between;
+    background-color: black;
+    padding: 0.5rem 4rem;
+    color: white;
+    margin: 2rem auto;
+}
+.comentario{
+    width: 50rem;
+    margin: 0 auto;
+    border: 1px solid var(--gray);
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    font-family: 'Dosis', sans-serif;
+    box-shadow: -3px 5px 12px -4px rgba(0,0,0,0.75);
+}
+
+.comentarios p, .descripcion p{
+  font-family: 'Dosis', sans-serif;
+
+}
+
+.descripcion{
+  margin: 2rem auto;
+  width: 65rem;
+}
+
+.descripcion p {
+  margin-bottom: 2rem;
+}
+
+.comentario .user{
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+} 
+
+.comentarios .user p{
+    margin-left: 0.5rem;
+}
+
+form.comment{
+    width: 50rem;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 3rem;
+}
+form.comment label{
+    position: absolute;
+    top: -30px;
+    font-size: 1.6rem;
+}
+
+form.comment textarea{
+    width: 50rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+    
+    #banner span:first-child{
+        font-size: 10rem;
+       
+    }
+
+    #banner span:nth-child(2){
+        width: 33rem;
+        font-size: 6rem;
+    
+    }
+    #banner span:nth-child(3){
+        font-size: 2.5rem;
+    }
+
+    .about-me__content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-me__content img{
+        width: 90%;
+    }
+
+    .projects-cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card{
+        width: 35rem;
+        height: 30rem;
+        margin-bottom: 2rem;
+    
+    }
+    
+  }
+
+
+  @media only screen and (max-width: 390px) {
+    
+    #banner span:first-child{
+        font-size: 6rem;
+       
+    }
+
+    #banner span:nth-child(2){
+        width: 20rem;
+        font-size: 5rem;
+    
+    }
+    #banner span:nth-child(3){
+        font-size: 2rem;
+    }
+
+    #info_me-bibliografia{
+        width: 22rem;
+        height: 11rem;
+    }
+
+
+    .card{
+        width: 20rem;
+        height: 25rem;
+        margin-bottom: 2rem;
+    
+    } 
+
+    .card img{
+        height: 15rem;
+    }
+    
+    .show-project h1{
+      font-size: 2rem;
+      width: 15rem;
+  
+  }
+  .show_page a, .show_icon-button{
+    font-size: 1.2rem;
+  }
+
+  .descripcion{
+    width: auto;
+  }
+    
+
+    
+  }
+
+
+
