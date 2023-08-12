@@ -14,11 +14,4 @@ class PaginasController
         $router->render('paginas/index');
     }
 
-    public static function projects(Router $router)
-    {
-        
-        $router->render('paginas/projects');
-    }
-
-    
 }

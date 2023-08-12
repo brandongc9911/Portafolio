@@ -3,7 +3,6 @@
 namespace Controllers;
 use Model\Project;
 use Model\Categorias;
-use Model\Comentarios;
 
 class APIController {
     public static function projects(){

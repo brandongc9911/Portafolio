@@ -10,7 +10,6 @@ use Controllers\PaginasController;
 
 
  $router->get('/',[PaginasController::class, 'index']);
- $router->get('/projects',[PaginasController::class, 'projects']);
 
 
 //  API

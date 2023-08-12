@@ -1,6 +1,5 @@
 const banner = document.querySelector("#banner")
 const spanBanner = document.querySelector("#spanBanner")
-const champiñon = document.querySelector("#champiñon")
 const reload = document.querySelector("#reload")
 const tecnologia = document.querySelector("#tecnologia")
 const tecnologias = ['PHP', 'JS', 'HTML', 'CSS', 'MYSQL', 'PYTHON', 'SASS']
@@ -169,17 +168,8 @@ async function consultarAPI() {
         const url = `${location.origin}/api/projects`;
         const resultado = await fetch(url);
         const project = await resultado.json();
-        if (window.location.pathname != "/project") {
-            showprojects(project);
+        showprojects(project, window.location.search)
 
-
-
-        }else{
-        showproject(project, window.location.search)
-
-
-
-        }
     } catch (error) {
         console.error(error);
     }
