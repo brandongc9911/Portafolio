@@ -1,9 +1,9 @@
 <?php
- require_once __DIR__ . '/../includes/app.php';
+require_once __DIR__ . '/../includes/app.php';
 
 use Controllers\APIController;
-use MVC\Router;
 use Controllers\PaginasController;
+use MVC\Router;
 
 
  $router = new Router();
@@ -13,7 +13,7 @@ use Controllers\PaginasController;
 
 
 //  API
-$router->get('/api/projects',[APIController::class, 'projects']);
+$router->get('/api/projects',[APIController::class, 'index']);
 $router->post('/api/like',[APIController::class, 'like']);
 
 
