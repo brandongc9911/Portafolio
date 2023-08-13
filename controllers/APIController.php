@@ -12,7 +12,6 @@ class APIController {
         $args = [
             'proyectos'=>$proyectos,
             'categorias'=>$categorias
-
         ];
         echo json_encode($args);   
     }
